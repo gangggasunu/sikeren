@@ -1,0 +1,12 @@
+name = "secure-identity-worker"
+main = "src/index.js"
+compatibility_date = "2026-10-22"
+workers_dev = false
+
+routes = [
+  { pattern = "tunnel.timemachine.id/secure*", zone_name = "timemachine.id" }
+]
+
+[[r2_buckets]]
+binding = "FLAGS"
+bucket_name = "secure-private-country-flags"

@@ -1,0 +1,15 @@
+{
+  "name": "secure-identity-worker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "upload:flags": "node scripts/upload-flags.mjs"
+  },
+  "devDependencies": {
+    "flag-icons": "^7.5.0",
+    "wrangler": "^4.0.0"
+  }
+}
